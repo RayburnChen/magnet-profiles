@@ -1,0 +1,21 @@
+server:
+  port: 8090
+  address: localhost
+spring:
+  application:
+    name: magnet-athena
+  data:
+    mongodb:
+      database: athena
+      host: localhost
+      port: 27017
+      repositories:
+        enabled: true
+eureka:
+  instance:
+    preferIpAddress: true
+    leaseRenewalIntervalInSeconds: 10
+    leaseExpirationDurationInSeconds: 20
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
