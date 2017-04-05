@@ -1,12 +1,12 @@
 server:
-  port: 8080
+  port: 8100
   address: localhost
 spring:
   application:
-    name: magnet-console
+    name: magnet-lucia
   data:
     mongodb:
-      database: console
+      database: lucia
       host: localhost
       port: 27017
       repositories:
@@ -16,7 +16,7 @@ eureka:
     preferIpAddress: true
     leaseRenewalIntervalInSeconds: 10
     leaseExpirationDurationInSeconds: 20
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka
 
