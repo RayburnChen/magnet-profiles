@@ -8,7 +8,7 @@ spring:
     mongodb:
       database: lucia
       host: localhost
-      port: 27017
+      port: 27018
       repositories:
         enabled: true
 eureka:
